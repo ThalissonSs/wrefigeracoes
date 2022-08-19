@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.naoselecionavel {
+  -webkit-touch-callout: none;  /* iPhone OS, Safari */
+  -webkit-user-select: none;    /* Chrome, Safari 3 */
+  -khtml-user-select: none;     /* Safari 2 */
+  -moz-user-select: none;       /* Firefox */
+  -ms-user-select: none;        /* IE10+ */
+  user-select: none;            /* Possível implementação no futuro */
+  /* cursor: default; */
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  background-color: #807641;
+}
+
+#container {
+  width: 900px;
+  max-height: 500px;
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+header {
+  background-color: #FFE036;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+
+  width: 100%;
+  height: 60px;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+#logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+}
+
+#logo-title-deco {
+  font-size: 32px;
+  color: #80701B;
+}
+
+#logo-title {
+  font-size: 18px;
+  color: #CCB42B;
+}
+
+#menu-ul {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#menu-ul>li>a {
+  color: rgb(69, 69, 69)
+}
+
+#menu-ul>li>a:hover {
+  border-bottom: 1px solid rgb(69, 69, 69);
+}
+
+#menu-ul>li>a:visited {
+  color: rgb(69, 69, 69);
+}
+
+#get-now {
+  border: none;
+  background-image: linear-gradient(to bottom, #FFEC82, #CCB42B);
+  padding: 8px 30px;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  color: white;
+}
+
+#get-now>a:visited {
+  color: lightgray;
+}
+
+#get-now:active {
+  transform: scale(1);
+  transition-duration: .1s;
+}
+
+main {
+  background-color: white;
+}
+
+#ar-condicionado {
+  background-image: url("../images/test02.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.textos {
+  background-color:  #ffe1368c;
+  padding: 10px;
+  color: black;
+  border-radius: 10px;
+}
+
+#servicos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: justify;
+  padding: 3rem;
+}
+
+#limpeza, #manutencao, #instalacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icone {
+  width: 80px;
+  height: 80px;
+
+  background-color: #FFE036;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.servico-title {
+  color: #CCB42B;
+  font-size: 16px;
+}
+
+.descricao {
+  font-size: 12px;
+  font-weight: lighter;
+  width: 200px;
+}
+
+@media screen and (min-width: 1024px) {
+  #container {
+    min-height: 450px;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #container {
+    min-height: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #logo-title-deco {
+    font-size: 26px;
+  }
+  #logo-title {
+    font-size: 12px;
+  }
+}
