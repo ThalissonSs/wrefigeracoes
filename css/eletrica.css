@@ -108,6 +108,11 @@ header {
   color: lightgray;
 }
 
+#get-now:hover {
+  transform: scale(1.1);
+  transition-duration: .1s;
+}
+
 #get-now:active {
   transform: scale(1);
   transition-duration: .1s;
