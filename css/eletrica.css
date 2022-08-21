@@ -9,6 +9,11 @@
   font-family: 'Poppins', sans-serif;
 }
 
+*::selection {
+  background-color: #FFE036;
+  color: white;
+}
+
 .naoselecionavel {
   -webkit-touch-callout: none;  /* iPhone OS, Safari */
   -webkit-user-select: none;    /* Chrome, Safari 3 */
@@ -84,7 +89,7 @@ header {
   color: rgb(69, 69, 69)
 }
 
-#menu-ul>li>a:hover {
+#menu-ul>li>a:hover, #active {
   border-bottom: 1px solid rgb(69, 69, 69);
 }
 
