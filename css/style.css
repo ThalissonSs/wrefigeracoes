@@ -27,7 +27,7 @@ body {
   justify-content: center;
   align-items: flex-end;
 
-  background-color: #807641;
+  background-color: #1E4DD6;
 }
 
 #container {
@@ -39,7 +39,7 @@ body {
 }
 
 header {
-  background-color: #FFE036;
+  background-color:#1EAED6;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   
   display: flex;
@@ -64,12 +64,12 @@ header {
 
 #logo-title-deco {
   font-size: 32px;
-  color: #80701B;
+  color: rgb(37, 37, 37);
 }
 
 #logo-title {
   font-size: 18px;
-  color: #CCB42B;
+  color: rgb(69, 69, 69);
 }
 
 #menu-ul {
@@ -78,6 +78,8 @@ header {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  font-size: 16px;
+  color: rgb(69, 69, 69);
 }
 
 #menu-ul>li>a {
@@ -94,18 +96,26 @@ header {
 
 #get-now {
   border: none;
-  background-image: linear-gradient(to bottom, #FFEC82, #CCB42B);
-  padding: 8px 30px;
+  background-image: linear-gradient(to bottom, #23F7ED, #2D90ED);
+  color: rgb(69, 69, 69);
   border-radius: 15px;
   letter-spacing: 1px;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
   color: white;
+  font-size: 13px;
+  width: 125px;
+  height: 35px;
 }
 
 #get-now>a:visited {
-  color: lightgray;
+  color: rgb(69, 69, 69);
+}
+
+#get-now:hover {
+  transform: scale(1.1);
+  transition-duration: .1s;
 }
 
 #get-now:active {
@@ -115,65 +125,42 @@ header {
 
 main {
   background-color: white;
+  height: calc(100% - 60px);
 }
 
-#ar-condicionado {
-  background-image: url("../images/test02.png");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 400px;
-
+#contatos {
   display: flex;
   flex-direction: column;
-
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.textos {
-  background-color:  #ffe1368c;
-  padding: 10px;
-  color: black;
-  border-radius: 10px;
-}
-
-#servicos {
-  display: flex;
   justify-content: space-around;
-  align-items: center;
+  height: 100%;
   flex-wrap: wrap;
-  text-align: justify;
   padding: 3rem;
+  gap: 2rem;
 }
 
-#limpeza, #manutencao, #instalacao {
+#instagram, #gmail, #wpp {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 1rem;
+  gap: .5rem;
 }
 
 .icone {
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
 
-  background-color: #FFE036;
+  background-color: #1EAED6;
   border-radius: 50%;
-  padding: 20px;
-}
-
-.servico-title {
-  color: #CCB42B;
-  font-size: 16px;
+  padding: 15px;
 }
 
 .descricao {
-  font-size: 12px;
-  font-weight: lighter;
+  font-size: 18px;
+  font-weight: bold;
   width: 200px;
+  color: rgb(69, 69, 69);
 }
 
 @media screen and (min-width: 1024px) {
@@ -188,7 +175,7 @@ main {
   }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 565px) {
   #logo-title-deco {
     font-size: 26px;
   }
@@ -200,18 +187,19 @@ main {
   }
   #get-now {
     font-size: 9px;
-    padding: 6px 20px;
+    width: 86.25px;
+    height: 24.15px;
     border-radius: 10px;
     letter-spacing: 0px;
   }
-  .textos>h1 {
-    font-size: 18px;
+  #textos>h1 {
+    font-size: 20px;
   }
-  .textos {
+  #textos {
     padding: 5px
   }
-  .textos>p {
-    font-size: 9px;
+  #textos>p {
+    font-size: 11px;
   }
   #ar-condicionado {
     height: 300px;
@@ -233,7 +221,7 @@ main {
   
   .descricao {
     font-size: 10px;
-    font-weight: lighter;
+    font-weight: bold;
     width: 230px;
   }
 }
